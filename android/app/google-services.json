@@ -15,11 +15,11 @@
       },
       "oauth_client": [
         {
-          "client_id": "317706203363-kbh6954nsbpqlr5ksh45b33mtjro8rgm.apps.googleusercontent.com",
+          "client_id": "317706203363-f2tphds58pk9c9i1olmc1a44ovng8fdt.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
             "package_name": "com.example.pastillero",
-            "certificate_hash": "14fabadf9e0887bc4815c9cf8574bb70c585cde8"
+            "certificate_hash": "2cc7c34595b1e5c263659c9fec5b231a5436f3c8"
           }
         },
         {

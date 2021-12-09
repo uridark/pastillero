@@ -10,7 +10,7 @@ class CorreoSignupButtonWidget extends StatelessWidget {
         padding: const EdgeInsets.all(4),
         child: OutlineButton.icon(
           label: const Text(
-            'Inicia sesión con correo electronico',
+            'Inicia sesión con correo',
             style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
           ),
           shape: const StadiumBorder(),

@@ -17,12 +17,12 @@ class PerfilBody extends State<Perfil> {
   final double profileHeight = 144;
   @override
   Widget build(BuildContext context) {
-    final user = FirebaseAuth.instance.currentUser;
+    final user = FirebaseAuth.instance.currentUser!;
     return Scaffold(
       backgroundColor: Colors.white,
       body: ListView(
         padding: EdgeInsets.zero,
-        children: <Widget>[buildtop(user!), buildContent(user)],
+        children: <Widget>[buildtop(user), buildContent(user)],
       ),
     );
   }
@@ -106,13 +106,13 @@ class PerfilBody extends State<Perfil> {
       ));
 
   Widget builderProfileImage(User user) {
-    var url = user.photoURL as String;
+    var url = user.photoURL;
     return CircleAvatar(
       radius: profileHeight / 2,
       backgroundColor: Colors.grey.shade800,
       backgroundImage: user.photoURL == null
           ? const AssetImage('assets/images/login-circle.png')
-          : NetworkImage(url) as ImageProvider,
+          : NetworkImage(url!) as ImageProvider,
     );
   }
 }
