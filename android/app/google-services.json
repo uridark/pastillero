@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "317706203363",
+    "firebase_url": "https://pastillero-5a95b-default-rtdb.firebaseio.com",
+    "project_id": "pastillero-5a95b",
+    "storage_bucket": "pastillero-5a95b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:317706203363:android:96fa1b7e9da4005185d5d6",
+        "android_client_info": {
+          "package_name": "com.example.pastillero"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "317706203363-kbh6954nsbpqlr5ksh45b33mtjro8rgm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.pastillero",
+            "certificate_hash": "14fabadf9e0887bc4815c9cf8574bb70c585cde8"
+          }
+        },
+        {
+          "client_id": "317706203363-kmca9tvdo7cda6gusu5vi3o5e1o3pqqe.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB8fPr3C4D6QvsyKhGMp-YPypvLCCE3L6I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "317706203363-kmca9tvdo7cda6gusu5vi3o5e1o3pqqe.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
