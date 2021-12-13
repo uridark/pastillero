@@ -5,7 +5,7 @@ import 'package:google_sign_in/google_sign_in.dart';
 
 class GoogleSignInProvider extends ChangeNotifier {
   final googleSignIn = GoogleSignIn();
-  final facebookLogin = FacebookLogin();
+  final _facebookLogin = FacebookLogin();
   GoogleSignInAccount? _user;
 
   GoogleSignInAccount get user => _user!;
@@ -30,12 +30,15 @@ class GoogleSignInProvider extends ChangeNotifier {
     notifyListeners();
   }
 
+  Future<void> facebookLogout() async {
+    final loggedIn = await _facebookLogin.isLoggedIn;
+    if (loggedIn) await _facebookLogin.logOut();
+    notifyListeners();
+  }
+
   Future logout() async {
-    var fbUser = await FacebookLogin().expressLogin();
     if (await googleSignIn.isSignedIn()) {
       await googleSignIn.disconnect();
-    } else if (fbUser == true) {
-      await facebookLogin.logOut();
     } else {
       FirebaseAuth.instance.signOut();
     }
